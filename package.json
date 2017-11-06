@@ -1,0 +1,41 @@
+{
+  "name": "parish",
+  "version": "1.0.0",
+  "description": "Simple server render app",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "cross-env NODE_ENV=development webpack -w",
+    "start-sev": "cross-env NODE_ENV=development nodemon server.js",
+    "dev": "npm run start-dev | npm run start-sev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parish Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.6.0",
+    "nodemon": "^1.12.1",
+    "null-loader": "^0.1.1",
+    "react-hot-loader": "^3.1.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0",
+    "webpack-hot-server-middleware": "^0.2.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-stream-string": "^1.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "redux": "^3.7.2"
+  }
+}
